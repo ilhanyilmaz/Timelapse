@@ -1,0 +1,278 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.digitalwonders.ilhan.timelapse.TimelapseSetup"
+    android:layout_weight="1">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                >
+                <TextView android:id="@+id/settings_label_2" android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="@color/settings_label_color"
+                    android:textStyle="bold" android:textSize="@dimen/settings_label_size" android:gravity="left"
+                    android:text="@string/settings_label_2"
+                    android:paddingLeft="16dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/settings_color1"
+                    android:layout_margin="4dp"
+                    android:id="@+id/set_resolution_layout"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_1_1"
+                        android:textSize="@dimen/settings_setting_size"
+                        android:layout_gravity="center_vertical" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/tw_image_size"
+                        android:text="1280 x 720"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/settings_color1"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_2_1"
+                        android:textSize="@dimen/settings_setting_size"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="3"
+                        android:id="@+id/tw_duration_hour"
+                        android:text="0"
+                        android:layout_gravity="left|top" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hour"
+                        android:layout_gravity="center_vertical" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="3"
+                        android:text="1"
+                        android:id="@+id/tw_duration_min"
+                        android:layout_gravity="left|top" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/minute"
+                        android:layout_gravity="center_vertical" />
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/settings_color1"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_2_2"
+                        android:textSize="@dimen/settings_setting_size"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="4"
+                        android:text="1"
+                        android:id="@+id/tw_interval_seconds"
+                        android:layout_gravity="left|top" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/second"
+                        android:layout_gravity="center_vertical" />
+                    />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp">
+                <TextView android:id="@+id/settings_label_3" android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="@color/settings_label_color"
+                    android:textStyle="bold" android:textSize="@dimen/settings_label_size" android:gravity="left"
+                    android:text="@string/settings_label_3"
+                    android:paddingLeft="16dp" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/settings_color1"
+                    android:layout_margin="4dp"
+                    android:padding="16dp" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_3_1"
+                        android:textSize="@dimen/settings_setting_size"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click to sync"
+                        android:textSize="@dimen/settings_setting_size"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="4" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/settings_color1"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_3_2"
+                        android:textSize="@dimen/settings_setting_size"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="3"
+                        android:id="@+id/tw_pan_start"
+                        android:text="90"
+                        android:layout_gravity="left|top" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="3"
+                        android:id="@+id/tw_pan_end"
+                        android:text="270"
+                        android:layout_gravity="left|top" />
+                    />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@color/settings_color1"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_3_3"
+                        android:textSize="@dimen/settings_setting_size"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="3"
+                        android:id="@+id/tw_tilt_start"
+                        android:text="135"
+                        android:layout_gravity="left|top" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="3"
+                        android:id="@+id/tw_tilt_end"
+                        android:text="225"
+                        android:layout_gravity="left|top" />
+                    />
+                </LinearLayout>
+                <Button android:id="@+id/b_start_timelapse"
+                    android:layout_width="fill_parent" android:layout_height="fill_parent"
+                    android:text="@string/dummy_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+
+</LinearLayout>
+
+
+    <!--LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_1_2"
+                            android:textSize="@dimen/settings_setting_size" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:ems="3"
+                            android:id="@+id/tw_quality"
+                            android:text="95"
+                            android:layout_gravity="center_horizontal|top" />
+                        />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_1_3"
+                            android:textSize="@dimen/settings_setting_size"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0x0 - 1280x720"
+                            android:textSize="@dimen/settings_setting_size"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="4" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="1" />
+
+                        />
+                    </LinearLayout-->

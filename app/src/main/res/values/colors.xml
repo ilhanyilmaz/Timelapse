@@ -1,0 +1,15 @@
+<resources>
+
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="settings_color1">#FFFFFF</color>
+    <color name="settings_label_color">@color/primary</color>
+    <color name="app_background">#E3F2FD</color>
+    <color name="button_background">#990000</color>
+
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent">#E3F2FD</color>
+    <color name="background">#E3F2FD</color>
+</resources>
