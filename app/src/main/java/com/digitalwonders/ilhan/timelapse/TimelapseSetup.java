@@ -75,9 +75,9 @@ public class TimelapseSetup extends Activity implements View.OnClickListener {
         recordActivity.putExtra(Constants.RECORD_INTERVAL, Integer.parseInt(((EditText)
                                 findViewById(R.id.tw_interval_seconds)).getText().toString()));
         recordActivity.putExtra(Constants.RECORD_LENGHT, Integer.parseInt(((EditText)
-                findViewById(R.id.tw_duration_hour)).getText().toString())*60000+1000*
+                findViewById(R.id.tw_duration_min)).getText().toString())*60000+1000*
                         Integer.parseInt(((EditText)
-                                findViewById(R.id.tw_duration_min)).getText().toString()));
+                                findViewById(R.id.tw_duration_sec)).getText().toString()));
         startActivity(recordActivity);
     }
 

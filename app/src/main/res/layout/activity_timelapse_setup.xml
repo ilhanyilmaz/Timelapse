@@ -71,13 +71,13 @@
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:ems="3"
-                        android:id="@+id/tw_duration_hour"
+                        android:id="@+id/tw_duration_min"
                         android:text="0"
                         android:layout_gravity="left|top" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/hour"
+                        android:text="@string/minute"
                         android:layout_gravity="center_vertical" />
                     <EditText
                         android:layout_width="wrap_content"
@@ -85,12 +85,12 @@
                         android:inputType="number"
                         android:ems="3"
                         android:text="1"
-                        android:id="@+id/tw_duration_min"
+                        android:id="@+id/tw_duration_sec"
                         android:layout_gravity="left|top" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/minute"
+                        android:text="@string/second"
                         android:layout_gravity="center_vertical" />
                     />
                 </LinearLayout>
